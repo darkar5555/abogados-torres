@@ -1,0 +1,72 @@
+<div class="container-fluid">
+  <div class="row">
+    <img class="trabaja" src="assets/images/trabaja.jpg" alt="">
+  </div>
+</div>
+
+<div class="separacion"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 col-lg-12 col-xs-12 col-sm-12">
+      <h2 class="text-center titulo-upper">Trabaja con Nosotros</h2>
+      <p class="text-center separar">
+        En Estudio Torres buscamos incorporar a los mejores talentos en las diferentes áreas de práctica que ejercemos.
+      </p>
+    </div>
+
+    <div class="col-md-offset-2 col-md-4">
+      <form [formGroup]="forma" class="form-horizontal" (ngSubmit)="enviar()" action="">
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Nombre</label>
+          <div class="col-sm-10">
+            <input formControlName="nombre" type="input" class="form-control" id="inputEmail3" placeholder="Nombre" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Email</label>
+          <div class="col-sm-10">
+            <input formControlName="email" type="email" class="form-control" id="inputEmail3" placeholder="Email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Teléfono</label>
+          <div class="col-sm-10">
+            <input formControlName="telefono" type="text" class="form-control" id="inputEmail3" placeholder="Teléfono" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">CV</label>
+          <div class="col-sm-10">
+            <input formControlName="cv" type="text" class="form-control" id="inputEmail3" placeholder="" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Cargo</label>
+          <div class="col-sm-10">
+            <input formControlName="cargo" type="text" class="form-control" id="inputEmail3" placeholder="Cargo" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Área</label>
+          <div class="col-sm-10">
+            <input formControlName="area" type="text" class="form-control" id="inputEmail3" placeholder="Área" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="inputEmail3" class="col-sm-2 control-label">Mensaje</label>
+          <div class="col-sm-10">
+            <textarea formControlName="mensaje" class="form-control" rows="4"></textarea>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <div class="col-sm-offset-2 col-sm-10">
+            <button type="submit" class="btn btn-default" [disabled]="!forma.valid">Enviar</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+.nosotrosImg{
+    width: 100%;
+    height: auto;
+}
+
+.letras{
+    
+    text-align: center;
+    margin: 0 0 4px;
+}
+
+.vismis img{
+    width: 100%;
+    height: auto;
+}
+
+.vismis{
+    padding-top: 100px;
+}
+
+.nosotros{
+    background: black;
+}
+
+.imgAbogado{
+    width: 100%;
+    height: 300px;
+}
+
+.imgAboModal{
+    width: 100%;
+    height: auto;
+}
+
+.zoom{
+    transition: transform .2s; /* Animation */
+
+}
+
+.zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    opacity: 0.8;
+}
+
+.button{
+    border-radius: 50%;
+}

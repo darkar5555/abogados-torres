@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.separacion{
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.titulo-upper{
+    text-transform: uppercase;
+    color: #CE7712;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.descripcion{
+    color: #CE7712;
+    text-align: center;
+    padding: 15px 15px;
+}
+
+.blanco{
+    color: #ffd;
+}
+
+body{
+    font-family: nunito;
+}

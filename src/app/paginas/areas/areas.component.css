@@ -1,0 +1,18 @@
+.areas{
+    width: 100%;
+}
+
+.areasImg{
+    width: 30%;
+    height: 50px;
+}
+
+.little_zoom{
+    transition: transform .2s; /* Animation */
+    text-align: center;
+}
+
+.little_zoom:hover {
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    opacity: 0.8;
+}

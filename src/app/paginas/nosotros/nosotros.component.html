@@ -1,0 +1,251 @@
+<div class="container-fluid">
+  <div class="row">
+    <img class="nosotrosImg" src="assets/images/nosotros.jpeg" alt="">
+  </div>
+</div>
+
+<div class="separacion"></div>
+
+<div class="nosotrosDes">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-3 col-md-6">
+        <h2 class="titulo-upper">nuestro equipo</h2>
+        <p class="letras">Te brindaremos la mejor ayuda profesional</p>
+        <p class="letras">con los mejores del medio</p>
+        <p class="letras">para usted</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="separacion"></div>
+<div class="content">
+  <div class="container-fluid nosotros">
+    <div id="gallery">
+      <!-- <h2 class="text-center">Nuestro Equipo</h2> -->
+      <br>
+      <br>
+      <p class="text-center blanco">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloromque
+      </p>
+      <br><br>
+      <div class="row equipo">
+        <div class="col-sm-6 col-md-3">
+          <div class="imagen">
+            <img class="imgAbogado  zoom" alt="" src="assets/images/abogado1.jpg" />
+          </div>
+          <div class="descripcion">
+            <h3>Jose Calderon</h3>
+            <p class="centrado">Planificacion Tributaria
+              <button class="button" (click)="openModal(content)">+</button>
+            </p>
+          </div>
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="imagen">
+            <img class="imgAbogado  zoom" alt="" src="assets/images/abogado2.jpg" />
+          </div>
+          <div class="descripcion">
+            <h3>Jose Calderon </h3>
+            <p class="centrado">Planificacion Tributaria
+              <button class="button" (click)="openModal(content1)">+</button>
+            </p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="imagen">
+            <img class="imgAbogado  zoom" alt="" src="assets/images/abogado3.jpg" />
+          </div>
+          <div class="descripcion">
+            <h3>Jose Calderon</h3>
+            <p class="centrado">Planificacion Tributaria
+              <button class="button" (click)="openModal(content2)">+</button>
+            </p>
+
+          </div>
+
+        </div>
+
+        <div class="col-sm-6 col-md-3">
+          <div class="imagen">
+            <img class="imgAbogado  zoom" alt="" src="assets/images/abogado4.jpg" />
+          </div>
+          <div class="descripcion">
+            <h3>Jose Calderon</h3>
+            <p class="centrado">Planificacion Tributaria
+              <button class="button" (click)="openModal(content3)">+</button>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<ng-template #content>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Jode Dinner Paredes 1</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-md-5 col-xs-12">
+        <img class="imgAboModal" src="assets/images/abogado1.jpg" alt="">
+
+      </div>
+      <div class="col-md-7 col-xs-12 col-sm-7">
+        <p>
+          <strong>Areas de practica:</strong>
+        </p>
+        <p>Tributacion, Aduanas y Comercio Exterior y Coorporativo</p>
+        <br>
+        <p>
+          <strong>Eduacion</strong>
+        </p>
+        <p>-Pontificia Universidad Catolica del Perú, 1967.</p>
+        <p>-Escuela de Graduacion de la Pontificia Universidad Catolica del Perú, Magister en Derecho Civil, 1989.
+        </p>
+        <br>
+        <p>
+          <strong>Trayectoria:</strong>
+        </p>
+        <p>-Hernandez & Cia Abogados (1992-A la fecha)</p>
+        <p>-Estudio Rubio Leguía, Normand, Hernandez y Asociados (1980-1991).</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button routerLink="/abogado/1" type="button" class="btn btn-light">Más</button>
+  </div>
+</ng-template>
+
+
+<ng-template #content1>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Jode Dinner Paredes 2</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-md-5 col-xs-12">
+        <img class="imgAboModal" src="assets/images/abogado2.jpg" alt="">
+
+      </div>
+      <div class="col-md-7 col-xs-12 col-sm-7">
+        <p>
+          <strong>Areas de practica:</strong>
+        </p>
+        <p>Tributacion, Aduanas y Comercio Exterior y Coorporativo</p>
+        <br>
+        <p>
+          <strong>Eduacion</strong>
+        </p>
+        <p>-Pontificia Universidad Catolica del Perú, 1967.</p>
+        <p>-Escuela de Graduacion de la Pontificia Universidad Catolica del Perú, Magister en Derecho Civil, 1989.
+        </p>
+        <br>
+        <p>
+          <strong>Trayectoria:</strong>
+        </p>
+        <p>-Hernandez & Cia Abogados (1992-A la fecha)</p>
+        <p>-Estudio Rubio Leguía, Normand, Hernandez y Asociados (1980-1991).</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button routerLink="/abogado/2" type="button" class="btn btn-light">Más</button>
+  </div>
+</ng-template>
+  
+
+<ng-template #content2>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Jode Dinner Paredes 3</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-md-5 col-xs-12">
+        <img class="imgAboModal" src="assets/images/abogado3.jpg" alt="">
+
+      </div>
+      <div class="col-md-7 col-xs-12 col-sm-7">
+        <p>
+          <strong>Areas de practica:</strong>
+        </p>
+        <p>Tributacion, Aduanas y Comercio Exterior y Coorporativo</p>
+        <br>
+        <p>
+          <strong>Eduacion</strong>
+        </p>
+        <p>-Pontificia Universidad Catolica del Perú, 1967.</p>
+        <p>-Escuela de Graduacion de la Pontificia Universidad Catolica del Perú, Magister en Derecho Civil, 1989.
+        </p>
+        <br>
+        <p>
+          <strong>Trayectoria:</strong>
+        </p>
+        <p>-Hernandez & Cia Abogados (1992-A la fecha)</p>
+        <p>-Estudio Rubio Leguía, Normand, Hernandez y Asociados (1980-1991).</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button routerLink="/abogado/3" type="button" class="btn btn-light">Más</button>
+  </div>
+</ng-template>
+
+
+<ng-template #content3>
+  <div class="modal-header">
+    <h4 class="modal-title pull-left">Jode Dinner Paredes 4</h4>
+    <button type="button" class="close pull-right" aria-label="Close" (click)="modalRef.hide()">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+  <div class="modal-body">
+    <div class="row">
+      <div class="col-md-5 col-xs-12">
+        <img class="imgAboModal" src="assets/images/abogado4.jpg" alt="">
+
+      </div>
+      <div class="col-md-7 col-xs-12 col-sm-7">
+        <p>
+          <strong>Areas de practica:</strong>
+        </p>
+        <p>Tributacion, Aduanas y Comercio Exterior y Coorporativo</p>
+        <br>
+        <p>
+          <strong>Eduacion</strong>
+        </p>
+        <p>-Pontificia Universidad Catolica del Perú, 1967.</p>
+        <p>-Escuela de Graduacion de la Pontificia Universidad Catolica del Perú, Magister en Derecho Civil, 1989.
+        </p>
+        <br>
+        <p>
+          <strong>Trayectoria:</strong>
+        </p>
+        <p>-Hernandez & Cia Abogados (1992-A la fecha)</p>
+        <p>-Estudio Rubio Leguía, Normand, Hernandez y Asociados (1980-1991).</p>
+      </div>
+    </div>
+  </div>
+  <div class="modal-footer">
+    <button routerLink="/abogado/4" type="button" class="btn btn-light">Más</button>
+  </div>
+</ng-template>
+  
+
+
+
+
+
+

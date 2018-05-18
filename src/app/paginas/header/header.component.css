@@ -1,0 +1,8 @@
+#navbar2{
+    position: fixed;
+    z-index: 100;
+}
+
+li{
+    padding-right: 21px;
+}

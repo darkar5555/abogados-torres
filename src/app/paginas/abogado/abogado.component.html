@@ -1,0 +1,44 @@
+<div class="container-fluid">
+  <div class="row">
+    <img class="nosotrosImg" src="assets/images/nosotros.jpeg" alt="">
+  </div>
+</div>
+
+<div class="separacion"></div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-offset-2 col-md-8 col-lg-8 col-sm-12 col-xs-12">
+      <h2 class="text-center titulo-upper">
+        {{abogado.nombre}}
+      </h2>
+      <p class="text-center">{{abogado.email}}</p>
+      <div class="row">
+        <div class="col-md-7 col-lg-7 col-sm-7 col-xs-12">
+            <p class="subtitulo"><strong>Areas de practica:</strong></p>
+            <p>-{{abogado.areas}}</p>
+            <br>
+            <p class="subtitulo"><strong>Educacion:</strong> </p>
+            <p *ngFor="let educacion of abogado.educacion" class="justificado">-{{educacion}}</p>
+            <br>
+          </div>
+          <div class="col-md-5 col-lg-5 col-sm-5 col-xs-12">
+              <img class="nosotrosImg" src="{{abogado.images}}" alt="">
+            </div>
+
+
+        <div class="col-md-12 col-sm-12 col-xs-12">
+            <p class="subtitulo"><strong>Trayectoria:</strong> </p>
+            <p *ngFor="let trayectoria of abogado.trayectoria">-{{trayectoria}}</p>
+            <br>
+            <p class="subtitulo"><strong>Membresia:</strong> </p>
+            <p *ngFor="let membresia of abogado.membresias">-{{membresia}}</p>
+        </div>
+
+
+        
+
+      </div>
+    </div>
+  </div>
+</div>
